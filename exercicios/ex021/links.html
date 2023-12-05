@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        #    = id
+        .    = class
+        :    = pseudo-class
+        ::   = pseudo-element
+        >    = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: blueviolet;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: brown;
+        }
+
+        .especial{
+            background-color: rgba(144, 97, 189, 0.568);
+        }
+
+        .especial::before{
+            content: '=>';
+        }
+
+        .especial::after{
+            content: '<=';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="http://www.youtube.com/@thelukquinhas">Meu canal no Youtube</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100001996823752" class="especial">Meu Facebook</a></li>
+        <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Flucas_lucas1999%3Ffbclid%3DIwAR15ZMa0HucxhcbtQHR78Fb6q4Qo0TSeQ-kmEBI4t_hkoeNvtVvXq1dDBG8&h=AT3ZZWpIZo0IkxAgJFdMv3yeleC7ouwJXvyqFatytdHCOYIGz-pCUQrzf1RyoDkD8kfxcICAD9M178HdcUx5ske5XtD-HwxmCnJtK4VojzV4O-gZDwzTfIjv6YJT75swc5ng">Meu Instagram</a></li>
+    </ul>
+</body>
+</html>

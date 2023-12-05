@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Caixas em Site</title>
+    <Style>
+        body{
+            font-family: serif;
+            background-color: #254021;
+            margin: 0px;
+        }
+
+        header{
+            background-color: #395922;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        
+        h1{
+            color: white;
+        }
+
+        nav{
+            background-color: #254021;
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.363);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            border-style: solid;
+            border-color: #254021;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        article{
+            padding: 5px;
+        }
+
+        #artigo{
+            font-size: 1.2em;
+            text-align: justify;
+        }
+
+        article > aside{
+            background-color: #395922;
+            color: white;
+        }
+
+        footer{
+            background-color: black;
+            padding: 10px;
+            margin: 0px;
+            color: white;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        div#bola{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </Style>
+</head>
+<body>
+    <header>
+        <h1>Brasfoot Company</h1>
+        <nav>
+            <a href="http://">BRASIL</a>
+            <a href="http://">ARGENTINA</a>
+            <a href="http://">INGLATERRA</a>
+            <a href="http://">ESPANHA</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Brasileirão</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Brasileirão pode ter pior pontuação de campeão desde 2009</h2>
+                <p id="artigo">A disputa pelo título será ponto a ponto nesta reta final, com quatro clubes como candidatos, e outros dois ainda com chances matemáticas. Emoção não deve faltar nesta reta final, com um desfecho que deve consagrar o campeão com pior pontuação no Brasileirão desde o Flamengo, em 2009. A história de 2009 é conhecida. O Flamengo era apenas o 10º colocado fim de 22 rodadas, com nove pontos de distância do líder, Palmeiras. O Rubro-Negro chegou ao topo apenas na penúltima rodada, e foi campeão com 67 pontos: a menor pontuação até hoje de um campeão brasileiro. O cenário atual indica um campeão com pontuação semelhante. Palmeiras e Flamengo têm 63 pontos. O Botafogo tem 62 e o Atlético Mineiro 60. Com apenas três jogos por realizar, o máximo que o campeão pode somar de pontos é 72, no caso do Alviverde e do Rubro-Negro. O Bota pode chegar a 71 pontos, no que já seria o segundo pior registro de um campeão. Já o Galo tem o limite de 69 pontos. Embora o trio Palmeiras, Flamengo e Atlético chegue embalado para a reta final, vencer três vezes seguidas é o melhor dos cenários, e também é improvável se considerarmos o aproveitamento dos candidatos. Os dois líderes tem 60% de aproveitamento, que se fosse mantido significaria uma pontuação final de aproximadamente 68 pontos. O time paulista teve três séries com três ou mais vitórias consecutivas no Brasileirão, o carioca apenas uma. Confira abaixo a lista com a pontuação dos campeões, ano a ano, no modelo atual. O Brasileirão é disputado com 20 clubes em pontos corridos desde 2006.</p>
+                <aside>
+                    <p>Artigo escrito por Lucas Barbosa</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por BirdB</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
