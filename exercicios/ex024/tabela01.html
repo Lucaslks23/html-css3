@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela01</title>
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+
+        table{
+            width: 400px;
+            height: 100px;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        th{
+            border: 2px solid black;
+        }
+
+        td{
+            
+            border: 2px solid black;
+            padding: 8px;
+        }
+
+        td.jogos{
+            font-style: italic;
+        }
+
+        td.numeros{
+            vertical-align: bottom;
+            padding: 8px 8px 0px 8px;
+        }
+
+        td a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        td a:hover{
+            text-decoration: underline;
+        }
+
+        td a:active{
+            color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <th>Title</th>
+        <th>Sales</th>
+        <tr>
+            <td class="jogos"><a href="https://en.wikipedia.org/wiki/Minecraft" target="_blank">Minecraft</a></td>
+            <td class="numeros">300,000,000</td>
+        </tr>
+
+        <tr>
+            <td class="jogos"><a href="https://en.wikipedia.org/wiki/Grand_Theft_Auto_V" target="_blank">Grand Theft Auto V</a></td>
+            <td class="numeros">190,000,000</td>
+        </tr>
+    </table>
+</body>
+</html>
