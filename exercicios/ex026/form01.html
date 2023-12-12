@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p><label for="iusu">Usuário:</label>
+                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="12" placeholder="Nome de Usuário"></p>
+            <p><label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" size="12" placeholder="Digite sua Senha"></p>
+            <p><label for="imedia">Média:</label>
+                <input type="number" name="imedia" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1">
+            </p>
+            <p><label for="imes">Período Letivo:</label>
+            <input type="month" name="mes" id="imes">
+            </p>
+            <p><label for="idia">Dia da Prova:</label>
+                <input type="date" name="dia" id="idia">
+            </p>
+            <p><label for="ihora">Horário da Prova</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+
+            <p><input type="radio" name="sexo" id="isxmas"><label for="isxmas">Masculino</label>
+
+            <input type="radio" name="sexo" id="isxfem"><label for="isxfem">Feminino</label>
+            </p>
+
+            <p><input type="checkbox" name="futebol" id="ifut" checked>
+            <label for="ifut">Futebol</label>
+            </p>
+
+            <p><label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+        </fieldset>
+
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+</body>
+</html>
